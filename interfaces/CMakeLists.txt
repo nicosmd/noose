@@ -1,1 +1,13 @@
+find_package(fastcdr)
+
+add_subdirectory(action_msgs)
+add_subdirectory(builtin_interfaces)
+add_subdirectory(composition_interfaces)
 add_subdirectory(lifecycle_msgs)
+add_subdirectory(rcl_interfaces)
+add_subdirectory(rosgraph_msgs)
+add_subdirectory(service_msgs)
+add_subdirectory(statistics_msgs)
+add_subdirectory(std_msgs)
+add_subdirectory(type_description_interfaces)
+add_subdirectory(unique_identifier_msgs)

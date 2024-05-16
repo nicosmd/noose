@@ -1,0 +1,25 @@
+target_sources(${TARGET_NAME} PRIVATE
+        validate_full_topic_name.c
+        qos_string_conversions.c
+        validate_node_name.c
+        validate_namespace.c
+        sanity_checks.c
+        security_options.c
+        init.c
+        message_sequence.c
+        network_flow_endpoint.c
+        subscription_content_filter_options.c
+        discovery_options.c
+        convert_rcutils_ret_to_rmw_ret.c
+        network_flow_endpoint_array.c
+        time.c
+        subscription_options.c
+        event.c
+        topic_endpoint_info.c
+        init_options.c
+        topic_endpoint_info_array.c
+        types.c
+        allocators.c
+        publisher_options.c
+        names_and_types.c
+)

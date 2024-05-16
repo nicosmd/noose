@@ -1,3 +1,6 @@
+add_subdirectory(ament_index_cpp)
+add_subdirectory(class_loader)
+add_subdirectory(libstatistics_collector)
 add_subdirectory(rclcpp)
 add_subdirectory(rclcpp_action)
 add_subdirectory(rclcpp_components)

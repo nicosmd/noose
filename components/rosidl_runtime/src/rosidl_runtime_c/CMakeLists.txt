@@ -1,0 +1,22 @@
+target_sources(${ROSIDL_RUNTIME_TARGET_NAME} PRIVATE
+        type_description/field__description.c
+        type_description/field__functions.c
+        type_description/field_type__description.c
+        type_description/field_type__functions.c
+        type_description/individual_type_description__description.c
+        type_description/individual_type_description__functions.c
+        type_description/key_value__description.c
+        type_description/key_value__functions.c
+        type_description/type_description__description.c
+        type_description/type_description__functions.c
+        type_description/type_source__description.c
+        type_description/type_source__functions.c
+        message_type_support.c
+        primitives_sequence_functions.c
+        sequence_bound.c
+        service_type_support.c
+        string_functions.c
+        type_description_utils.c
+        type_hash.c
+        u16string_functions.c
+)

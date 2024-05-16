@@ -1,1 +1,7 @@
+add_subdirectory(logging)
+add_subdirectory(rmw)
+add_subdirectory(rcl)
 add_subdirectory(rclcpp)
+add_subdirectory(rosidl_runtime)
+add_subdirectory(rcutils)
+add_subdirectory(tracing)

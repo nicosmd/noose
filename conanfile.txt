@@ -1,0 +1,15 @@
+[requires]
+fast-cdr/2.1.0
+libyaml/0.2.5
+boost/1.85.0
+console_bridge/1.0.2
+poco/1.13.3
+fast-dds/2.14.0
+spdlog/1.14.1
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[layout]
+cmake_layout

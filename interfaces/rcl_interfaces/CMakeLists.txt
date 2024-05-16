@@ -1,0 +1,25 @@
+nooseidl_generate_cpp(TARGET rcl_interfaces PACKAGE_NAME rcl_interfaces IDLS
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/FloatingPointRange.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/IntegerRange.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/ListParametersResult.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Log.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/LoggerLevel.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Parameter.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/ParameterDescriptor.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/ParameterEvent.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/ParameterEventDescriptors.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/ParameterType.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/ParameterValue.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/SetLoggerLevelsResult.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/SetParametersResult.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/srv/DescribeParameters.srv
+        ${CMAKE_CURRENT_SOURCE_DIR}/srv/GetLoggerLevels.srv
+        ${CMAKE_CURRENT_SOURCE_DIR}/srv/GetParameters.srv
+        ${CMAKE_CURRENT_SOURCE_DIR}/srv/GetParameterTypes.srv
+        ${CMAKE_CURRENT_SOURCE_DIR}/srv/ListParameters.srv
+        ${CMAKE_CURRENT_SOURCE_DIR}/srv/SetLoggerLevels.srv
+        ${CMAKE_CURRENT_SOURCE_DIR}/srv/SetParameters.srv
+        ${CMAKE_CURRENT_SOURCE_DIR}/srv/SetParametersAtomically.srv
+        DEPS
+        builtin_interfaces
+)

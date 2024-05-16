@@ -1,0 +1,34 @@
+nooseidl_generate_cpp(TARGET std_msgs PACKAGE_NAME std_msgs IDLS
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/UInt32MultiArray.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/ByteMultiArray.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Int32MultiArray.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/UInt8MultiArray.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Char.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Byte.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/UInt64.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/UInt16MultiArray.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Int8MultiArray.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Int8.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/UInt64MultiArray.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Int64MultiArray.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Int16MultiArray.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/UInt16.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Int32.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/String.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/MultiArrayLayout.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/UInt32.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Header.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Int64.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Int16.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Float64MultiArray.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/ColorRGBA.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Float32MultiArray.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Float64.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/MultiArrayDimension.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Bool.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Float32.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/Empty.msg
+        ${CMAKE_CURRENT_SOURCE_DIR}/msg/UInt8.msg
+        DEPS
+        builtin_interfaces
+)

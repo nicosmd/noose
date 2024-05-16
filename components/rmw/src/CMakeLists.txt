@@ -1,0 +1,4 @@
+add_subdirectory(rmw)
+add_subdirectory(rmw_dds_common)
+add_subdirectory(rmw_fastrtps_cpp)
+add_subdirectory(rmw_fastrtps_shared_cpp)
