@@ -16,33 +16,36 @@
 #define ROSIDL_TYPESUPPORT_C__TYPE_SUPPORT_MAP_H_
 
 #include <stddef.h>
+#include <variant>
+#include "rosidl_runtime_c/service_type_support_struct.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
 
+typedef const rosidl_message_type_support_t *(*TypeSupportHandleFunc)(void);
+typedef const rosidl_service_type_support_t *(*ServiceTypeSupportHandleFunc)(void);
 /// Contains all available C typesupport handles to choose from.
-typedef struct type_support_map_t
-{
-  // TODO(dirk-thomas) const should not be defined for the fields
-  // but should be set for the struct when it is being used
-  // same for rosidl_message_type_support_t et al
+typedef struct type_support_map_t {
+    // TODO(dirk-thomas) const should not be defined for the fields
+    // but should be set for the struct when it is being used
+    // same for rosidl_message_type_support_t et al
 
-  /// Length of the `typesupport_identifier`, `symbol_name` and `data` arrays.
-  const size_t size;
+    /// Length of the `typesupport_identifier`, `symbol_name` and `data` arrays.
+    const size_t size;
 
-  /// The ROS 2 package this is generated from.
-  const char * package_name;
+    /// The ROS 2 package this is generated from.
+    const char *package_name;
 
-  /// Array of identifiers for the type_supports.
-  const char * const * typesupport_identifier;
+    /// Array of identifiers for the type_supports.
+    const char *const *typesupport_identifier;
 
-  /// Array of symbol names to get the typesupports.
-  const char * const * symbol_name;
+    /// Array of symbol names to get the typesupports.
+    const char *const *symbol_name;
 
-  /// Array of pointers to type support handle functions that were successfully found.
-  void ** data;
+    /// Array of pointers to type support handle functions that were successfully found.
+    std::variant<TypeSupportHandleFunc , ServiceTypeSupportHandleFunc> data[2];
 } type_support_map_t;
 
 #ifdef __cplusplus
