@@ -54,14 +54,16 @@ function(nooseidl_generate_cpp)
                 ${CMAKE_BINARY_DIR}/gen/${nooseidl_generate_cpp_PACKAGE_NAME}/${IDL_TYPE}/${IDL_NAME_LOWER_SNAKE}__type_support.cpp
                 ${CMAKE_BINARY_DIR}/gen/${nooseidl_generate_cpp_PACKAGE_NAME}/${IDL_TYPE}/${IDL_NAME_LOWER_SNAKE}__type_support_c.cpp
                 ${CMAKE_BINARY_DIR}/gen/${nooseidl_generate_cpp_PACKAGE_NAME}/${IDL_TYPE}/detail/dds_fastrtps/${IDL_NAME_LOWER_SNAKE}__type_support.cpp
+                ${CMAKE_BINARY_DIR}/gen/${nooseidl_generate_cpp_PACKAGE_NAME}/${IDL_TYPE}/detail/dds_fastrtps/${IDL_NAME_LOWER_SNAKE}__type_support_c.cpp
                 ${CMAKE_BINARY_DIR}/gen/${nooseidl_generate_cpp_PACKAGE_NAME}/${IDL_TYPE}/detail/${IDL_NAME_LOWER_SNAKE}__type_support.c
                 ${CMAKE_BINARY_DIR}/gen/${nooseidl_generate_cpp_PACKAGE_NAME}/${IDL_TYPE}/detail/${IDL_NAME_LOWER_SNAKE}__description.c
                 ${CMAKE_BINARY_DIR}/gen/${nooseidl_generate_cpp_PACKAGE_NAME}/${IDL_TYPE}/detail/${IDL_NAME_LOWER_SNAKE}__type_support.cpp
+                ${CMAKE_BINARY_DIR}/gen/${nooseidl_generate_cpp_PACKAGE_NAME}/${IDL_TYPE}/detail/${IDL_NAME_LOWER_SNAKE}__type_support_c.c
                 ${CMAKE_BINARY_DIR}/gen/${nooseidl_generate_cpp_PACKAGE_NAME}/${IDL_TYPE}/detail/${IDL_NAME_LOWER_SNAKE}__functions.c
         )
     endforeach ()
 
-    set(NOOSEGEN_PATH /home/sin7hi/dev/noose-idl/dist/noosegen/noosegen)
+    set(NOOSEGEN_PATH /home/nico/noose-idl/dist/noosegen/noosegen)
 
     set(INCLUDE_ARG)
 

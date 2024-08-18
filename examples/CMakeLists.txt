@@ -1,1 +1,2 @@
 add_subdirectory(simple_publisher)
+add_subdirectory(simple_subscriber)
